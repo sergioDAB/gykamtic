@@ -1,0 +1,74 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 visible-xs visible-sm visible-md visible-lg" id="graficaDona">
+      <br>
+      <table>
+        <thead>
+          <tr>
+            <div class="row">
+              <div class="col-xs-3 col-xs-offset-1 visible-xs visible-sm visible-md col-lg-3 visible-lg">
+                <th>TAREA</th>
+              </div>
+              <div class="col-xs-3 visible-xs visible-sm visible-md visible-lg">
+                <th>ASIGNADO A</th>
+              </div>
+              <div class="col-xs-3 visible-xs visible-sm visible-md visible-lg">
+                <th>PRIORIDAD</th>
+              </div>
+              <div class="col-xs-3 visible-xs visible-sm visible-md visible-lg">
+                <th>ESTADO</th>
+              </div>
+            </div>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <br><br>    
+  <div class="row">
+    <div class="col-xs-5 col-xs-offset-1 visible-xs visible-sm visible-md visible-lg" id="graficaDona">
+      <h2>Estado General de las Tareas</h2>
+      <canvas baseChart
+        [data]="doughnutChartData"
+        [labels]="doughnutChartLabels"
+        [chartType]="doughnutChartType"
+        (chartHover)="chartHovered($event)"
+        (chartClick)="chartClicked($event)">
+      </canvas>
+    </div>
+    <div class="col-xs-5 visible-xs visible-sm visible-md visible-lg" id="graficaBarras">
+      <h2>Proyectos Realizados</h2>
+      <div style="display: block">
+        <canvas baseChart
+          [datasets]="barChartData"
+          [labels]="barChartLabels"
+          [options]="barChartOptions"
+          [legend]="barChartLegend"
+          [chartType]="barChartType"
+          (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)">
+        </canvas>
+        <button (click)="randomize()">Update</button>
+      </div>
+    </div>
+    <div class="col-xs-6 visible-xs col-sm-6 visible-sm col-md-6 visible-md col-lg-6 visible-lg" id="graficaBarras">
+      <section class="grafico-barras">
+				<ul>
+          <span class="barra-fondo">
+          </span>
+          <span class="barra-fondo">
+          </span>
+          <span class="barra-fondo">
+          </span>
+          <span class="barra-fondo">
+          </span>
+          <span class="barra-fondo">
+          </span>             
+				</ul>
+      </section>
+    </div>
+  </div>
+</div>

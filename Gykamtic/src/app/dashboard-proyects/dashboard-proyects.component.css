@@ -1,0 +1,18 @@
+th{
+    font-family: merienda-one;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+h2{
+    font-family: merienda-one;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+button{
+    font-family: merienda-one;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: rgb(85, 192, 241);
+}

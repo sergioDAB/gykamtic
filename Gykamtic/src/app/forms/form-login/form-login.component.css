@@ -1,0 +1,40 @@
+label{
+    font-family: merienda-one;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+input{
+    font-family: merienda-one;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.ext_fieldset{
+    margin: 4%;
+    background-color: darkcyan;
+}
+
+h2{
+    color: white;
+    font-family: merienda-one;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.int_fieldset{
+    background-color: white;
+}
+
+button {
+    border: none;
+    background-color: darkcyan;
+    color: #f2f2f2;
+    padding: 10px 20px;
+    font-family: merienda-one;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+}

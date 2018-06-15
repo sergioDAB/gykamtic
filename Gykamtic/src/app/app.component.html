@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Gykamtic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">  <meta name="description" content="Desarrollo de Software">
+  <meta name="keywords" content="sofware,development,web,mobile,">
+  <meta name="author" content="Génesis Ulate, Sergio">
+</head>
+
+<div class = "container" style = "padding: 20px;">
+    <div class = "row visible-on">       
+      <div class = "col-xs-6 col-sm-3" style = "background-color: #dedef8;
+        box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">          
+        <span class = "hidden-xs">Extra small</span>
+        <span class = "visible-xs">✔ Visible on x-small</span>
+      </div>       
+      <div class = "col-xs-6 col-sm-3" style = "background-color: #dedef8;
+        box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">          
+        <span class = "hidden-sm">Small</span>
+        <span class = "visible-sm">✔ Visible on small</span>
+      </div>       
+      <div class = "clearfix visible-xs"></div>       
+      <div class = "col-xs-6 col-sm-3" style = "background-color: #dedef8;
+        box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">          
+        <span class = "hidden-md">Medium</span>
+        <span class = "visible-md">✔ Visible on medium</span>
+      </div>       
+      <div class = "col-xs-6 col-sm-3" style = "background-color: #dedef8;
+        box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">          
+        <span class = "hidden-lg">Large</span>
+        <span class = "visible-lg">✔ Visible on large</span>
+      </div>       
+    </div> 
+  </div>
+  <div class="container-fluid well">
+    <div class="row">
+      <div class="col-xs-1">1</div>
+      <div class="col-xs-1">2</div>
+      <div class="col-xs-1">3</div>
+      <div class="col-xs-1">4</div>
+      <div class="col-xs-1">5</div>
+      <div class="col-xs-1">6</div>
+      <div class="col-xs-1">7</div>
+      <div class="col-xs-1">8</div>
+      <div class="col-xs-1">9</div>
+      <div class="col-xs-1">10</div>
+      <div class="col-xs-1">11</div>
+      <div class="col-xs-1">12</div>
+    </div>
+  </div>
+
+<div class="container-fluid">
+  <div class="row" id="header">
+    <div class="col-xs-12 visible-xs col-sm-12 visible-sm col-md-12 visible-md col-lg-12 visible-lg">
+    </div>
+    <div class="col-xs-9 visible-xs col-sm-9 visible-sm col-md-9 visible-md col-lg-9 visible-lg" id="decorator">
+    </div>
+  </div>
+</div>
+
+<body>
+  <div class="container-fluid">
+    <div class="row" id="menu">
+      <!--Menu secundario es visible en sm lg-->
+      <div class="col-sm-12 visible-sm visible-md col-md-12 visible-lg col-lg-12">
+        <div class=" col-sm-2 col-lg-2">
+          <a routerLink="/home"><img src="../assets/img/michelle.png"></a>
+        </div>        
+        <div class="col-sm-2 col-lg-2">
+          <a routerLink="/home" class="enlace-menu2">Inicio</a>
+        </div>
+        <div class="col-sm-2 col-lg-2">
+          <a routerLink="/about" class="enlace-menu2">Nosotros</a>
+        </div>
+        <div class="col-sm-2 col-lg-2">
+          <a routerLink="/proyects" class="enlace-menu2">Proyectos</a>
+        </div>
+        <div class="col-sm-2 col-lg-2">
+          <a routerLink="/services" class="enlace-menu2">Servicios</a>
+        </div>
+        <div class="col-sm-2 col-lg-2">
+            <a routerLink="/contact" class="enlace-menu2">Contacto</a>
+        </div>
+      </div>
+      <!--Menu compacto es visible en xs-->
+      <div class="col-xs-12 visible-xs">
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="container-fluid">
+            <!--Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" routerLink="/home"><img src="../assets/img/michelle.png"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <!--<a class="navbar-brand" id="logo" routerLink="/home"></a>-->
+                <li>
+                  <a routerLink="/home" class="enlace-menu">Inicio</a>
+                </li>
+                <li>
+                  <a routerLink="/about" class="enlace-menu">Nosotros</a>
+                </li>
+                <li>
+                  <a routerLink="/proyects" class="enlace-menu">Proyectos</a>
+                </li>
+                <li>
+                  <a routerLink="/services" class="enlace-menu">Servicios</a>
+                </li>
+                <li>
+                  <a routerLink="/contact" class="enlace-menu">Contacto</a>
+                </li>
+              </ul>
+            </div> 
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</body>
+
+<router-outlet></router-outlet>
+
+<div class="container-fluid well" id="footer">
+  <div class="row">
+    <div class="col-sm-10 visible-sm col-sm-offset-2 visible-md col-md-9 col-md-offset-3 visible-lg col-lg-7 col-lg-offset-5">
+      <footer>  
+        <div class="col-xs-1 col-sm-1 col-lg-1">
+          <img src="../assets/img/facebook.svg" onclick="facebook()">
+        </div>
+        <div class=" col-xs-1 col-sm-1 col-lg-1">
+          <img src="../assets/img/twitter.svg" onclick="Twitter()">
+        </div>
+        <div class=" col-xs-1 col-sm-1 col-lg-1">
+          <img src="../assets/img/youtube.svg" onclick="youtube()">
+        </div> 
+      </footer>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 visible-xs visible-sm visible-md visible-lg" id="info">
+      <footer>
+        <div class="col-xs-7 col-xs-offset-5">
+          <h3>Costa Rica (+506) 61395750 / 88032666</h3>
+          <h3>Costa Rica. San Juan de Ciudad Quesada, San Carlos.</h3>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-10 visible-xs col-sm-10 visible-sm visible-md col-md-10 visible-lg col-lg-10" id="copyright">
+      <footer>
+        <div class="col-xs-4 col-xs-offset-6">
+          <p>Copyright. Todos los derechos reservados 2018.</p>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+</html>
